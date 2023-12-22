@@ -15,7 +15,6 @@ function MessageBoard() {
     newMessage.splice(index, 1);
     setMessage(newMessage);
   }
-
   return (
     <div className="app-wrapper">
       <h1 class="app-title">Message board</h1>
@@ -44,7 +43,7 @@ function MessageBoard() {
           return (
             <h1 className="message" key={index}>
               {item}
-              <button
+              <button type="Submit"
                 onClick={() => {
                   deleteMessage(index);
                 }}
